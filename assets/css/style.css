@@ -1,0 +1,292 @@
+/**
+* @license
+*
+* Font Family: Montserrat
+* Designed by: Julieta Ulanovsky, Sol Matas, Juan Pablo del Peral, Jacques Le Bailly
+* URL: https://www.fontshare.com/fonts/montserrat
+* © 2024 Indian Type Foundry
+*
+* Montserrat Thin 
+* Montserrat ThinItalic 
+* Montserrat ExtraLight 
+* Montserrat ExtraLightItalic 
+* Montserrat Light 
+* Montserrat LightItalic 
+* Montserrat Regular 
+* Montserrat Italic 
+* Montserrat Medium 
+* Montserrat MediumItalic 
+* Montserrat SemiBold 
+* Montserrat SemiBoldItalic 
+* Montserrat Bold 
+* Montserrat BoldItalic 
+* Montserrat ExtraBold 
+* Montserrat ExtraBoldItalic 
+* Montserrat Black 
+* Montserrat BlackItalic 
+* Montserrat Variable (Variable font)
+* Montserrat VariableItalic (Variable font)
+
+  /**
+  * This is a variable font
+  * You can control variable axes as shown below:
+  * font-variation-settings: wght 100.0;
+  *
+  * available axes:
+  'wght' (range from 100.0 to 900.0
+  */
+@font-face {
+  font-family: "Montserrat-Variable";
+  src: url("../fonts/Montserrat-Variable.woff2") format("woff2"),
+    url("../fonts/Montserrat-Variable.woff") format("woff"),
+    url("../fonts/Montserrat-Variable.ttf") format("truetype");
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+}
+/**
+  * This is a variable font
+  * You can control variable axes as shown below:
+  * font-variation-settings: wght 100.0;
+  *
+  * available axes:
+  'wght' (range from 100.0 to 900.0
+  */
+@font-face {
+  font-family: "Montserrat-VariableItalic";
+  src: url("../fonts/Montserrat-VariableItalic.woff2") format("woff2"),
+    url("../fonts/Montserrat-VariableItalic.woff") format("woff"),
+    url("../fonts/Montserrat-VariableItalic.ttf") format("truetype");
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: italic;
+}
+
+:root {
+  --font-family: "Montserrat-Variable", sans-serif;
+  --font-family-italic: "Montserrat-VariableItalic", sans-serif;
+  --c-primary: #2c3e50;
+  --c-secondary: #18bc9c;
+  --c-accent: #e74c3c;
+  --c-bg: #ecf0f1;
+  --c-text: #34495e;
+  --transition: all 0.3s ease;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--c-text);
+  background-color: var(--c-bg);
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 .h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  color: var(--c-text);
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--c-primary);
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--c-secondary);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  padding: 2rem;
+}
+
+/* NAVBAR */
+
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav .nav-link {
+  color: var(--c-text);
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.navbar-nav .nav-link.active {
+  color: var(--c-primary);
+}
+
+.btn {
+  font-family: var(--font-family);
+  font-weight: 600;
+  color: var(--c-primary);
+  padding: 8px 16px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.brand-btn {
+  background-color: var(--c-primary);
+  color: white;
+}
+
+.brand-btn:hover {
+  background-color: var(--c-secondary);
+}
+
+/* HERO */
+#hero {
+  background: linear-gradient(#18bc9b91, #3498dbad), url(../images/hero-1.jpg);
+
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+/*section */
+.section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.section-title .line {
+  width: 40px;
+  height: 4px;
+  background-color: var(--c-primary);
+  margin: 16px auto 24px auto;
+}
+
+.section-title p {
+  font-size: 1.2rem;
+  font-weight: 200;
+  color: var(--c-text);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.iconbox {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(#18bc9b91, #3498dbad);
+  color: var(--c-primary);
+  font-size: 28px;
+  border-radius: 20px;
+  flex: none;
+}
+
+.theme-shadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+
+  border-radius: 16px;
+}
+
+/* SERVICE */
+
+.service {
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.service::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background: var(--c-primary);
+  transition: var(--transition);
+}
+
+.service:hover::after {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.service:hover p,
+.service:hover h5 {
+  color: white;
+}
+
+.service:hover i {
+  color: white;
+}
+
+.service:hover .iconbox {
+  background-color: var(--c-bg);
+}
+
+#counter {
+  background: linear-gradient(#18bc9b91, #3498dbad),
+    url(../images/counter-1.jpg);
+
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+#counter h1 {
+  color: white;
+}
+
+/*IMAGE WRAPPER*/
+
+.image-zoom-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.image-zoom-wrapper img {
+  transition: var(--transition);
+}
+
+.image-zoom-wrapper:hover img {
+  transform: scale(1.1);
+  border-radius: 16px;
+}
+
+/* PORTFOLIO */
+
+.portfolio-box .iconbox {
+  color: white;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.portfolio-box:hover .iconbox {
+  top: 50%;
+  opacity: 1;
+}
